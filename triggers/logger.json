@@ -6,7 +6,7 @@
             "INSERT",
             "UPDATE",
             "REPLACE",
-            "DELETE",
+            "DELETE"
         ],
         "database": "app",
         "collection": "collection",
