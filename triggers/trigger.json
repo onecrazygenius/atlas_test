@@ -1,0 +1,14 @@
+{
+    "name": "trigger",
+    "type": "DATABASE",
+    "config": {
+      "database": "app",
+      "collection": "app",
+      "operation_types": ["INSERT"],
+      "full_document": true,
+      "full_document_before_change": false,
+      "function_name": "logFunction",
+      "disabled": false
+    }
+  }
+  
