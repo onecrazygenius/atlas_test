@@ -2,13 +2,23 @@
     "name": "logger",
     "type": "DATABASE",
     "config": {
-      "database": "app",
-      "collection": "app",
-      "operation_types": ["INSERT"],
-      "full_document": true,
-      "full_document_before_change": false,
-      "function_name": "logFunction",
-      "disabled": false
+        "database": "app",
+        "collection": "collection",
+        "service_name": "service",
+        "match": {},
+        "project": {},
+        "full_document": false,
+        "full_document_before_change": false,
+        "unordered": false,
+        "skip_catchup_events": false,
+        "tolerate_resume_errors": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "logFunction"
+            }
+        }
     }
-  }
-  
+}
