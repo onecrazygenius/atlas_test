@@ -2,6 +2,12 @@
     "name": "logger",
     "type": "DATABASE",
     "config": {
+        "operation_types": [
+            "INSERT",
+            "UPDATE",
+            "REPLACE",
+            "DELETE",
+        ],
         "database": "app",
         "collection": "collection",
         "service_name": "service",
