@@ -1,7 +1,7 @@
 {
     "app_id": "production-xiqyq",
     "config_version": 20210101,
-    "name": "production",
+    "name": "application",
     "location": "IE",
     "provider_region": "aws-eu-west-1",
     "deployment_model": "LOCAL"
