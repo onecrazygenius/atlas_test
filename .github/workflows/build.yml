@@ -79,6 +79,6 @@ jobs:
     - name: "delete dynamically generated database"
       if: ${{ env.IS_DYNAMICALLY_GENERATED_APP }}
       run: |
-           mongo "mongodb+srv://${{ secrets.ATLAS_URI_PULL_REQUESTS }}/InventoryDemo-${{ env.CURRENT_TIME }}" --username ${{ secrets.ATLAS_USERNAME_PULL_REQUESTS }} --password ${{ secrets.ATLAS_PASSWORD_PULL_REQUESTS }} --eval "db.dropDatabase()"
+           mongo "mongodb+srv://${{ secrets.ATLAS_URI_PR_BRANCHES }}/pr-${{ env.CURRENT_TIME }}" --username ${{ secrets.ATLAS_USERNAME_PULL_REQUESTS }} --password ${{ secrets.ATLAS_PASSWORD_PULL_REQUESTS }} --eval "db.dropDatabase()"
 
 
